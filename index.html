@@ -37,10 +37,15 @@
   #bgShade { position: absolute; inset: 0; pointer-events: none;
              background: linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.1) 30%, rgba(0,0,0,.15) 55%, rgba(0,0,0,.7) 100%); }
   body.bgvideo .ambient { mix-blend-mode: soft-light; }
+  body.shade-bright #bgShade { opacity: .5; }
+  #bgDim { position: absolute; inset: 0; pointer-events: none; background: rgba(0,0,0,.4); display: none; }
+  body.shade-dim #bgDim { display: block; }
+  body.greet-off #greeting { visibility: hidden; }
 
   /* Prayer times (Dubai): next prayer large, the day's five below it. */
   #prayer { display: none; text-align: right; margin-bottom: 4px; }
   #prayer.on { display: block; }
+  #prayer + #pills { margin-left: 36px; }
   #hijri { font-size: 22px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.5); }
   #nextPrayer { margin-top: 8px; font-size: 40px; font-weight: 400; letter-spacing: .02em; }
   #nextPrayer b { font-weight: 600; }
@@ -99,7 +104,12 @@
   #glass.on { opacity: 1; }
 
   /* Without the helper the pills cannot do anything, so they are not shown. */
-  body.static:not(.helper) #pills { display: none; }
+  /* Settings rows: the current value on the right, changed with Left/Right or OK. */
+  #menu .row .val { margin-left: auto; padding-left: 24px; color: rgba(255,255,255,.55); white-space: nowrap; }
+  #menu .row.focus .val { color: #555; }
+  #menu .row.focus .val:before { content: '\2039  '; }
+  #menu .row.focus .val:after { content: '  \203A'; }
+  #menu.settings { width: 1100px; }
 
   /* Inputs: a glass panel under the pills, one row per input (the launcher's popup_inputs). */
   #inputs { position: absolute; left: 1134px; top: 196px; width: 520px; padding: 16px; border-radius: 40px; z-index: 6;
@@ -161,6 +171,7 @@
 <body>
 <video id="bg" muted loop playsinline preload="auto"></video>
 <div id="bgShade"></div>
+<div id="bgDim"></div>
 <div class="ambient" id="ambientA"></div>
 <div class="ambient" id="ambientB"></div>
 
@@ -174,7 +185,7 @@
     <div class="pill round" data-action="search"><svg viewBox="0 0 24 24"><path d="M10 3a7 7 0 0 1 5.6 11.2l5.6 5.6-1.4 1.4-5.6-5.6A7 7 0 1 1 10 3zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/></svg></div>
     <div class="pill" data-action="inputs"><svg viewBox="0 0 24 24"><path d="M8 2h8v6h2v6a6 6 0 0 1-5 5.9V22h-2v-2.1A6 6 0 0 1 6 14V8h2V2zm2 2v4h4V4h-4z"/></svg>Inputs</div>
     <div class="pill" data-action="network" id="netPill"><svg viewBox="0 0 24 24"><path d="M12 18.5a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5zM12 13c2.3 0 4.4.9 6 2.4l-1.7 1.7A6.2 6.2 0 0 0 12 15.4c-1.7 0-3.2.6-4.3 1.7L6 15.4A8.6 8.6 0 0 1 12 13zm0-5c3.7 0 7.1 1.5 9.6 3.9l-1.7 1.7A11.2 11.2 0 0 0 12 10.4c-3 0-5.8 1.2-7.9 3.2l-1.7-1.7C4.9 9.5 8.3 8 12 8zm0-5c5.1 0 9.8 2 13.2 5.4l-1.7 1.7A16.3 16.3 0 0 0 12 5.4C7.5 5.4 3.4 7.2.5 10.1L-1.2 8.4C2.2 5 6.9 3 12 3z" transform="scale(.92) translate(1 0)"/></svg><span id="netLabel">Wi-Fi</span></div>
-    <div class="pill" data-action="settings"><svg viewBox="0 0 24 24"><path d="M19.4 13a7.6 7.6 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.4 7.4 0 0 0-1.7-1L15 3.3h-4l-.4 2.6a7.4 7.4 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.6 7.6 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1c.5.4 1.1.7 1.7 1l.4 2.6h4l.4-2.6c.6-.3 1.2-.6 1.7-1l2.5 1 2-3.5L19.4 13zM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/></svg>Settings</div>
+    <div class="pill round" data-action="settings"><svg viewBox="0 0 24 24"><path d="M19.4 13a7.6 7.6 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.4 7.4 0 0 0-1.7-1L15 3.3h-4l-.4 2.6a7.4 7.4 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.6 7.6 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1c.5.4 1.1.7 1.7 1l.4 2.6h4l.4-2.6c.6-.3 1.2-.6 1.7-1l2.5 1 2-3.5L19.4 13zM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/></svg></div>
     <div class="pill" data-action="vidaa"><svg viewBox="0 0 24 24"><path d="M12 3 2 11.5h3V21h5.5v-6h3v6H19v-9.5h3L12 3z"/></svg>VIDAA</div>
   </div>
 </div>
@@ -243,14 +254,86 @@
   var DUBAI = ['comp_DB_D011_C010_PSNK_DENOISE_v19_SDR_PS_20180914_SDR_2K_AVC.mov', 'comp_DB_D008_C010_PSNK_v21_SDR_PS_20180914_F0F16157_SDR_2K_AVC.mov',
     'comp_DB_D002_C003_PSNK_v04_SDR_PS_20180914_SDR_2K_AVC.mov', 'comp_DB_D001_C001_PSNK_v06_SDR_PS_20180824_SDR_2K_AVC.mov',
     'comp_DB_D001_C005_COMP_PSNK_v12_SDR_PS_20180912_SDR_2K_AVC.mov'];
+  var bgListening = false, bgChoice = null;
   function startBackground() {
-    var v = $('bg'), i = Math.floor(Math.random() * DUBAI.length);
-    v.addEventListener('playing', function () { v.classList.add('on'); document.body.classList.add('bgvideo'); });
-    v.addEventListener('error', function () { v.classList.remove('on'); document.body.classList.remove('bgvideo'); });
+    var v = $('bg'), choice = settings.bg;
+    if (choice === bgChoice) return;
+    bgChoice = choice;
+    if (!bgListening) {
+      bgListening = true;
+      v.addEventListener('playing', function () { v.classList.add('on'); document.body.classList.add('bgvideo'); });
+      v.addEventListener('error', function () { v.classList.remove('on'); document.body.classList.remove('bgvideo'); });
+    }
+    v.classList.remove('on'); document.body.classList.remove('bgvideo');
+    if (choice === 'glow') { v.removeAttribute('src'); v.load(); return; }
+    var i = /^d[1-5]$/.test(choice) ? +choice[1] - 1 : Math.floor(Math.random() * DUBAI.length);
     v.src = 'https://sylvan.apple.com/Videos/' + DUBAI[i];
     var p = v.play(); if (p && p.catch) p.catch(function () {});
   }
-  startBackground();
+
+  // ---------- settings: kept in this TV browser's storage, changed from the gear button on the header ----------
+  var CITIES = {
+    dubai: ['Dubai', 25.2048, 55.2708], abudhabi: ['Abu Dhabi', 24.4539, 54.3773], sharjah: ['Sharjah', 25.3463, 55.4209],
+    ajman: ['Ajman', 25.4052, 55.5136], rak: ['Ras Al Khaimah', 25.8007, 55.9762], fujairah: ['Fujairah', 25.1288, 56.3265],
+    alain: ['Al Ain', 24.2075, 55.7447] };
+  var SETTINGS = [
+    { key: 'bg', label: 'Background', opts: [['dubai', 'Dubai, new view each time'], ['d1', 'Dubai view 1'], ['d2', 'Dubai view 2'],
+      ['d3', 'Dubai view 3'], ['d4', 'Dubai view 4'], ['d5', 'Dubai view 5'], ['glow', 'Colour glow only']] },
+    { key: 'shade', label: 'Background brightness', opts: [['bright', 'Bright'], ['normal', 'Normal'], ['dim', 'Dim']] },
+    { key: 'clock', label: 'Clock', opts: [['12', '12-hour'], ['24', '24-hour']] },
+    { key: 'greet', label: 'Greeting', opts: [['name', 'With your name'], ['plain', 'Without name'], ['off', 'Off']] },
+    { key: 'prayer', label: 'Prayer times', opts: [['on', 'On'], ['off', 'Off']] },
+    { key: 'city', label: 'Prayer city', opts: Object.keys(CITIES).map(function (k) { return [k, CITIES[k][0]]; }) }
+  ];
+  var DEFAULTS = { bg: 'dubai', shade: 'normal', clock: '12', greet: 'name', prayer: 'on', city: 'dubai' };
+  var settings = (function () {
+    var s = {}; try { s = JSON.parse(localStorage.getItem('tv-settings') || '{}') || {}; } catch (e) {}
+    Object.keys(DEFAULTS).forEach(function (k) { if (!(k in s)) s[k] = DEFAULTS[k]; });
+    return s;
+  })();
+  function saveSettings() { try { localStorage.setItem('tv-settings', JSON.stringify(settings)); } catch (e) {} }
+  function applySettings() {
+    var b = document.body;
+    b.classList.toggle('shade-bright', settings.shade === 'bright');
+    b.classList.toggle('shade-dim', settings.shade === 'dim');
+    b.classList.toggle('greet-off', settings.greet === 'off');
+    state.clock24 = settings.clock === '24';
+    state.greetingName = settings.greet === 'name' ? (state.loaded && state.loaded.greeting_name) || '' : '';
+    startBackground();
+    lastMinute = -1; tick();
+  }
+  function settingValue(def) {
+    var cur = settings[def.key];
+    for (var i = 0; i < def.opts.length; i++) if (def.opts[i][0] === cur) return def.opts[i][1];
+    return def.opts[0][1];
+  }
+  function openSettings() {
+    menu.kind = 'settings';
+    var items = SETTINGS.map(function (d) { return { label: d.label, def: d }; });
+    if (state.removedCount) items.push({ label: 'Restore removed apps (' + state.removedCount + ')', act: 'restore' });
+    items.push({ label: 'Reset settings', act: 'reset' }, { label: 'Done', act: 'cancel' });
+    showMenu('Settings', items);
+    $('menu').classList.add('settings');
+    paintSettings();
+  }
+  function paintSettings() {
+    var rows = $('menu').querySelectorAll('.row');
+    menu.items.forEach(function (it, i) {
+      if (!it.def) return;
+      rows[i].innerHTML = '';
+      rows[i].appendChild(document.createTextNode(it.label));
+      var v = document.createElement('span'); v.className = 'val'; v.textContent = settingValue(it.def);
+      rows[i].appendChild(v);
+    });
+  }
+  function stepSetting(dir) {
+    var it = menu.items[menu.index];
+    if (!it || !it.def) return;
+    var opts = it.def.opts, i = 0;
+    for (var j = 0; j < opts.length; j++) if (opts[j][0] === settings[it.def.key]) i = j;
+    settings[it.def.key] = opts[(i + dir + opts.length) % opts.length][0];
+    saveSettings(); paintSettings(); applySettings();
+  }
 
   // ---------- prayer times (Dubai) ----------
   // Aladhan method 16 (Dubai) matched the official UAE timetable to the minute once Dhuhr and Isha are 1 minute earlier.
@@ -258,14 +341,15 @@
   var PRAYERS = [['Fajr', 0], ['Dhuhr', -1], ['Asr', 0], ['Maghrib', 0], ['Isha', -1]];
   var HIJRI = ['Muharram', 'Safar', 'Rabi al-Awwal', 'Rabi al-Thani', 'Jumada al-Ula', 'Jumada al-Akhirah', 'Rajab', 'Shaban', 'Ramadan', 'Shawwal', 'Dhul Qadah', 'Dhul Hijjah'];
   var prayerMonths = {}, prayerLoading = {};
-  function monthKey(d) { return 'pt-' + d.getFullYear() + '-' + (d.getMonth() + 1); }
+  function monthKey(d) { return 'pt-' + settings.city + '-' + d.getFullYear() + '-' + (d.getMonth() + 1); }
   function loadPrayerMonth(d) {
     var key = monthKey(d);
     if (prayerMonths[key] || prayerLoading[key]) return;
     try { var cached = JSON.parse(localStorage.getItem(key)); if (cached && cached.length) { prayerMonths[key] = cached; return; } } catch (e) {}
     prayerLoading[key] = true;
+    var c = CITIES[settings.city] || CITIES.dubai;
     var url = 'https://api.aladhan.com/v1/calendar/' + d.getFullYear() + '/' + (d.getMonth() + 1) +
-      '?latitude=25.2048&longitude=55.2708&method=16&timezonestring=Asia/Dubai';
+      '?latitude=' + c[1] + '&longitude=' + c[2] + '&method=16&timezonestring=Asia/Dubai';
     fetch(url).then(function (r) { return r.json(); }).then(function (j) {
       var days = (j.data || []).map(function (x) {
         var t = {};
@@ -286,6 +370,7 @@
   }
   function fmt12(mins) { var h = Math.floor(mins / 60) % 24, m = ('0' + mins % 60).slice(-2); return ((h % 12) || 12) + ':' + m + (h < 12 ? ' am' : ' pm'); }
   function renderPrayer(d) {
+    if (settings.prayer === 'off') { $('prayer').classList.remove('on'); return; }
     loadPrayerMonth(d);
     var today = prayerDay(d);
     if (!today) { $('prayer').classList.remove('on'); return; }
@@ -455,7 +540,7 @@
     var i = focus.index;
     if (i < dock) {
       if (dx) focus.index = Math.max(0, Math.min(dock - 1, i + dx));
-      if (dy < 0 && (!state.static || state.helper)) { focus.lastDock = i; focus.area = 'pills'; }
+      if (dy < 0 && document.querySelectorAll('.pill').length) { focus.lastDock = i; focus.area = 'pills'; }
       if (dy > 0 && n > dock) { focus.lastDock = i; focus.index = dock + Math.min(i, Math.min(COLS, n - dock) - 1); }
       return render();
     }
@@ -539,7 +624,7 @@
     var app = focused();
     if (!app) return;
     menu.app = app; menu.kind = 'tile';
-    var items = [{ label: 'Remove from Home', act: 'remove' }];
+    var items = [{ label: 'Move left', act: 'left' }, { label: 'Move right', act: 'right' }, { label: 'Remove from Home', act: 'remove' }];
     if (state.removedCount) items.push({ label: 'Restore removed apps (' + state.removedCount + ')', act: 'restore' });
     items.push({ label: 'Cancel', act: 'cancel' });
     showMenu(app.name, items);
@@ -566,14 +651,31 @@
     for (var i = 0; i < rows.length; i++) rows[i].classList.toggle('focus', i === menu.index);
   }
   function closeMenu() {
-    focus.area = menu.kind === 'vidaa' ? 'pills' : focus.index < state.dockSize ? 'dock' : 'grid';
+    focus.area = menu.kind === 'vidaa' || menu.kind === 'settings' ? 'pills' : focus.index < state.dockSize ? 'dock' : 'grid';
     menu.kind = 'tile';
+    $('menu').classList.remove('settings');
     renderMenu(); render();
   }
   function menuChoose() {
     var it = menu.items[menu.index], app = menu.app;
+    if (menu.kind === 'settings' && it && it.def) { stepSetting(1); return; }
     closeMenu();
     if (!it || it.act === 'cancel') return;
+    if (it.act === 'reset') {
+      settings = JSON.parse(JSON.stringify(DEFAULTS)); saveSettings();
+      try { localStorage.removeItem('tv-order'); } catch (e) {}
+      start(state.loaded); toast('Settings reset');
+      return;
+    }
+    if (it.act === 'left' || it.act === 'right') {
+      var ids = state.apps.map(function (a) { return a.appId; }), at = ids.indexOf(app.appId), to = at + (it.act === 'right' ? 1 : -1);
+      if (at < 0 || to < 0 || to >= ids.length) return;
+      ids.splice(at, 1); ids.splice(to, 0, app.appId);
+      try { localStorage.setItem('tv-order', JSON.stringify(ids)); } catch (e) {}
+      start(state.loaded);
+      focus.index = to; focus.area = to < state.dockSize ? 'dock' : 'grid'; render();
+      return;
+    }
     if (it.act === 'vidaa-off' || it.act === 'takeover-on' || it.act === 'vidaa-home') {
       var on = it.act === 'takeover-on';
       if (it.act !== 'vidaa-home') { try { localStorage.setItem('cyt-takeover', on ? 'on' : 'off'); } catch (e) {} state.takeover = on; }
@@ -603,6 +705,7 @@
       if (action === 'search') openBrowser();
       else if (action === 'inputs') openInputs();
       else if (action === 'vidaa') openVidaaMenu();
+      else if (state.static && !state.helper) openSettings();
       else viaHelper('key=KEY_MENU');
       return;
     }
@@ -649,6 +752,7 @@
     if (focus.area === 'browser') { browserKey(e); return; }
     if (focus.area === 'menu') {
       if (k === 38 || k === 40) { menu.index = Math.max(0, Math.min(menu.items.length - 1, menu.index + (k === 40 ? 1 : -1))); renderMenu(); }
+      else if (menu.kind === 'settings' && (k === 37 || k === 39)) stepSetting(k === 39 ? 1 : -1);
       else if (k === 13 && !e.repeat) activate();
       else if (k === 8 || k === 461 || k === 27) closeMenu();
       e.preventDefault();
@@ -870,6 +974,18 @@
       apps = apps.map(function (a, i) { return { a: a, i: i }; })
         .sort(function (x, y) { return rank(x.a) - rank(y.a) || x.i - y.i; }).map(function (x) { return x.a; });
       dockSize = apps.filter(function (a) { return dock.indexOf(a.appId) >= 0; }).length;
+      // An order set with Move left / Move right wins; the first four are the dock.
+      var order = []; try { order = JSON.parse(localStorage.getItem('tv-order') || '[]') || []; } catch (e) {}
+      if (order.length) {
+        var pos = function (a) { var p = order.indexOf(a.appId); return p < 0 ? order.length : p; };
+        apps = apps.map(function (a, i) { return { a: a, i: i }; })
+          .sort(function (x, y) { return pos(x.a) - pos(y.a) || x.i - y.i; }).map(function (x) { return x.a; });
+        dockSize = 4;
+      }
+      // Without a helper only the gear (settings) can do anything, so the other pills go.
+      if (!state.helper) [].slice.call(document.querySelectorAll('.pill')).forEach(function (p) {
+        if (p.getAttribute('data-action') !== 'settings') p.parentNode.removeChild(p);
+      });
     }
     state.apps = apps;
     state.dockSize = Math.min(dockSize || 4, COLS, state.apps.length);
@@ -885,7 +1001,7 @@
     } catch (e) {}
     if (focus.index >= state.apps.length) focus.index = Math.max(0, state.apps.length - 1);
     if (!onTop()) focus.area = focus.index < state.dockSize ? 'dock' : 'grid';
-    lastMinute = -1; tick();
+    applySettings();
     build(); render();
   }
   function startStatic() {
