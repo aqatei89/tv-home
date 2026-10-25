@@ -221,18 +221,18 @@
  "dock": [
   "24",
   "3",
-  "1",
-  "252"
+  "252",
+  "1823"
  ],
  "helper_dock": [
   "24",
   "3",
-  "1",
-  "252"
+  "252",
+  "1823"
  ],
  "sources": [],
  "browser": {},
  "greeting_name": "Ahmad",
  "clock_24h": false,
- "native_ok": null
+ "native_ok": false
 }
