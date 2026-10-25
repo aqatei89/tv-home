@@ -42,7 +42,6 @@ for a in apps:
     aid = str(a.get("appId")); url = str(web_urls.get(aid, a.get("url", ""))).strip()
     if aid in hidden: continue
     is_web = str(url).startswith(("http://", "https://"))
-    if not is_web and aid not in native: continue
     e = {"appId": aid, "name": a.get("name", "").replace("▶", "").split(" : ")[0].strip(), "icon": icon_url(a)}
     if aid in CFG.get("names", {}): e["name"] = CFG["names"][aid]
     if is_web: e["url"] = url.strip()

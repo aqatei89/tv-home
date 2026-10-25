@@ -139,6 +139,58 @@
    ]
   },
   {
+   "appId": "2709",
+   "name": "لجزيرة 360",
+   "icon": "https://img.vidaahub.com/vidaa/2026/7/202607010341371446.jpg",
+   "url": "https://tv.onvesper.com/vidaa/dce.aljazeera/index.html",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAMklEQVR4nBXDwQkAIAwEwTXtWIE92H8f4kPIJVEcmNbHvGdtLCUyHAsXv6WcVGAhQRUPZxEbMKj0zsAAAAAASUVORK5CYII=",
+   "bg": "rgb(32,40,59)",
+   "glow": [
+    21,
+    99,
+    124
+   ]
+  },
+  {
+   "appId": "353",
+   "name": "WatchiT",
+   "icon": "https://img.vidaahub.com/vidaa/2024/2/202402260802458197.jpg",
+   "url": "https://smart.watchit.com",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFUlEQVR4nGNkYGD4z8DAwMAEIggwACnlAQlKnYWjAAAAAElFTkSuQmCC",
+   "bg": "rgb(0,0,0)",
+   "glow": [
+    198,
+    149,
+    34
+   ]
+  },
+  {
+   "appId": "2379",
+   "name": "Shoof",
+   "icon": "https://img.vidaahub.com/vidaa/2026/3/202603300719384445.png",
+   "url": "https://shoofapi-origin.alkass.net/TVAPPS/Hisense/",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFUlEQVR4nGNkYGD4z8DAwMAEIggwACnlAQlKnYWjAAAAAElFTkSuQmCC",
+   "bg": "rgb(0,0,0)",
+   "glow": [
+    196,
+    149,
+    4
+   ]
+  },
+  {
+   "appId": "227",
+   "name": "Haystack TV Local + World News",
+   "icon": "https://img.vidaahub.com/vidaa/2024/12/202412101945116636.jpg",
+   "url": "https://dn6q4f0q0kh23.cloudfront.net/receiver/hisense/haystackreceiver.html",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFklEQVR4nGN8YqP/n4GBgYEJRBBgAABi3wJYrj0s5wAAAABJRU5ErkJggg==",
+   "bg": "rgb(228,59,46)",
+   "glow": [
+    229,
+    65,
+    53
+   ]
+  },
+  {
    "appId": "2738",
    "name": "Disney+ Hotstar",
    "icon": "https://img.vidaahub.com/vidaa/2026/8/202608300325165189.png",
@@ -165,6 +217,98 @@
    ]
   },
   {
+   "appId": "232",
+   "name": "Viu",
+   "icon": "https://img.vidaahub.com/vidaa/2021/11/202111120807389214.jpg",
+   "url": "https://web-os-tv.viu.com/hisense/index.html",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFklEQVR4nGP8v4/hPwMDAwMTiCDAAAB1owLGbE9KEwAAAABJRU5ErkJggg==",
+   "bg": "rgb(255,190,0)",
+   "glow": [
+    255,
+    191,
+    5
+   ]
+  },
+  {
+   "appId": "293",
+   "name": "NBA",
+   "icon": "https://img.vidaahub.com/vidaa/2026/6/202606260558403108.png",
+   "url": "https://cweb-ott.nba.com/",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFUlEQVR4nGOUlFH6w8DAwMAEIggwADf+AV2RHtggAAAAAElFTkSuQmCC",
+   "bg": "rgb(25,28,35)",
+   "glow": [
+    131,
+    69,
+    100
+   ]
+  },
+  {
+   "appId": "47",
+   "name": "DEEZER",
+   "icon": "https://img.vidaahub.com/vidaa/2025/1/202501100241497703.png",
+   "url": "https://tv2.deezer.com/hisense",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFUlEQVR4nGNkYGD4z8DAwMAEIggwACnlAQlKnYWjAAAAAElFTkSuQmCC",
+   "bg": "rgb(0,0,0)",
+   "glow": [
+    144,
+    50,
+    224
+   ]
+  },
+  {
+   "appId": "2181",
+   "name": "VIDAA Kids",
+   "icon": "https://img.vidaahub.com/vidaa/2024/4/202404070753375034.jpg",
+   "native": true,
+   "nurl": "kidsLauncher",
+   "storeType": 99,
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAALUlEQVR4nGNUbv//n4GBgYHlPwOYZmDh/MHAAGKziL4G0wwsQu8YGRj+/2cAAAwTC7ZOe17hAAAAAElFTkSuQmCC",
+   "bg": "rgb(52,118,255)",
+   "glow": [
+    62,
+    127,
+    242
+   ]
+  },
+  {
+   "appId": "162",
+   "name": "DAZN",
+   "icon": "https://img.vidaahub.com/vidaa/2024/5/202405300640297559.png",
+   "url": "https://tv.dazn.com/app/vidaa/",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFUlEQVR4nGPk4BP6z8DAwMAEIggwADCTATFVParZAAAAAElFTkSuQmCC",
+   "bg": "rgb(8,14,18)",
+   "glow": [
+    9,
+    14,
+    18
+   ]
+  },
+  {
+   "appId": "2562",
+   "name": "V Home",
+   "icon": "https://img.vidaahub.com/vidaa/2026/3/202603041122457789.jpg",
+   "url": "https://tvmodules-vidaa.vidaahub.com/home-os/V1.0/index-home-os.html?canLaunchingVidaaTV=true",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFUlEQVR4nGNkYGD4z8DAwMAEIggwACnlAQlKnYWjAAAAAElFTkSuQmCC",
+   "bg": "rgb(0,0,0)",
+   "glow": [
+    108,
+    101,
+    0
+   ]
+  },
+  {
+   "appId": "373",
+   "name": "Roya TV",
+   "icon": "https://img.vidaahub.com/vidaa/2023/8/202308030641291894.png?resize=w_300,h_300",
+   "url": "https://royaapps.faulio.com/index.html",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAADElEQVR4nGNgIAEAAAAtAAHF18CGAAAAAElFTkSuQmCC",
+   "glow": [
+    123,
+    32,
+    93
+   ]
+  },
+  {
    "appId": "16",
    "name": "TV Browser",
    "icon": "https://img.vidaahub.com/vidaa/2023/11/202311210704287492.png",
@@ -176,6 +320,250 @@
    "glow": [
     35,
     39,
+    47
+   ]
+  },
+  {
+   "appId": "363",
+   "name": "WeTV",
+   "icon": "https://img.vidaahub.com/vidaa/2022/8/202208290150472062.jpg?resize=w_300,h_300",
+   "url": "https://static.wetv.vip/tv/index.html#/?prod_line=WETVLINUX&v_channel_id=16563",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFklEQVR4nGP8////fwYGBgYmEEGAAQCqZAQGhTii+wAAAABJRU5ErkJggg==",
+   "bg": "rgb(255,255,255)",
+   "glow": [
+    120,
+    172,
+    132
+   ]
+  },
+  {
+   "appId": "244",
+   "name": "UEFA.tv",
+   "icon": "https://img.vidaahub.com/vidaa/2023/11/202311090919094943.png",
+   "url": "https://dice-tv.imggaming.com/vidaa/dce.uefatv/index.html#/",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAIklEQVR4nGNk4jf/8o9Pl4GJAQogjP//IQwmTg6oCCMjAwCOPwSS77qDmgAAAABJRU5ErkJggg==",
+   "bg": "rgb(1,24,78)",
+   "glow": [
+    4,
+    26,
+    84
+   ]
+  },
+  {
+   "appId": "245",
+   "name": "Triller TV.",
+   "icon": "https://img.vidaahub.com/vidaa/2024/1/202401240916139001.png",
+   "url": "https://ott-apps.fite.tv/hisense/index.html",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFklEQVR4nGP8////fwYGBgYmEEGAAQCqZAQGhTii+wAAAABJRU5ErkJggg==",
+   "bg": "rgb(255,255,255)",
+   "glow": [
+    234,
+    72,
+    72
+   ]
+  },
+  {
+   "appId": "42",
+   "name": "Plex",
+   "icon": "https://img.vidaahub.com/vidaa/2023/11/202311090915047445.png",
+   "url": "https://app.plex.tv/tv-vidaa",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFklEQVR4nGP8////fwYGBgYmEEGAAQCqZAQGhTii+wAAAABJRU5ErkJggg==",
+   "bg": "rgb(255,255,255)",
+   "glow": [
+    215,
+    158,
+    54
+   ]
+  },
+  {
+   "appId": "2243",
+   "name": "VIDAA Art",
+   "icon": "https://img.vidaahub.com/vidaa/2024/6/202406190708079062.png",
+   "url": "https://tvmodules-vidaa.vidaahub.com/vidaa-art/V1.0/index-vidaa-art.html",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFUlEQVR4nGMUEJL6z8DAwMAEIggwADPvAUUGpSoRAAAAAElFTkSuQmCC",
+   "bg": "rgb(16,18,26)",
+   "glow": [
+    21,
+    40,
+    50
+   ]
+  },
+  {
+   "appId": "184",
+   "name": "Vod On Demand",
+   "icon": "https://img.vidaahub.com/vidaa/2026/2/202602060557241329.jpg?resize=w_300,h_300",
+   "native": true,
+   "nurl": "vidaa-free",
+   "storeType": 98,
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFklEQVR4nGN8Warzn4GBgYEJRBBgAABs0AKTAa7HggAAAABJRU5ErkJggg==",
+   "bg": "rgb(233,117,44)",
+   "glow": [
+    233,
+    118,
+    46
+   ]
+  },
+  {
+   "appId": "233",
+   "name": "Kidoodle TV",
+   "icon": "https://img.vidaahub.com/vidaa/2026/3/202603170735246004.png",
+   "url": "https://ctv-prod.kidoodle.tv/vidaa/index.html",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAANElEQVR4nGMMtvz5//xPNgamt3+ZGV7/YWBgevqHkUGZhYGB6cd/JgZmkMinvwwMqqwMDACdGA9KK5YcHAAAAABJRU5ErkJggg==",
+   "bg": "rgb(51,50,253)",
+   "glow": [
+    89,
+    53,
+    235
+   ]
+  },
+  {
+   "appId": "304",
+   "name": "iWant",
+   "icon": "https://img.vidaahub.com/vidaa/2025/7/202507090345145673.png",
+   "url": "https://livingroom.iwanttfc.com/vidaa/index.html",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAALklEQVR4nGOUT9z8X3bJXQYm1rc/GLj+/2dgYnv9g4HnPwOEwQ0SYX0DYjAwAACgzBGlPMaEpwAAAABJRU5ErkJggg==",
+   "bg": "rgb(62,29,153)",
+   "glow": [
+    64,
+    23,
+    150
+   ]
+  },
+  {
+   "appId": "79",
+   "name": "Red Bull TV",
+   "icon": "https://img.vidaahub.com/vidaa/2023/11/202311090916463905.png",
+   "url": "https://vidaa-v2.redbull.tv",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFUlEQVR4nGNklbf6z8DAwMAEIggwADl6AWetjOTNAAAAAElFTkSuQmCC",
+   "bg": "rgb(4,31,58)",
+   "glow": [
+    80,
+    48,
+    63
+   ]
+  },
+  {
+   "appId": "164",
+   "name": "APP STORE",
+   "icon": "https://img.vidaahub.com/vidaa/2023/11/202311210654589294.png",
+   "native": true,
+   "nurl": "vidaa-store",
+   "storeType": 99,
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAOElEQVR4nAEtANL/AY0wu//AEeYAAvwB/AD7+QEAAvQC8gD29PMAAgAQ/wAHAwEABO755gD7+voAwzcTw/mUSRwAAAAASUVORK5CYII=",
+   "bg": "rgb(97,53,160)",
+   "glow": [
+    101,
+    55,
+    164
+   ]
+  },
+  {
+   "appId": "15",
+   "name": "AccuWeather",
+   "icon": "https://img.vidaahub.com/vidaa/2023/11/202311091029582894.png",
+   "native": true,
+   "nurl": "accuweather",
+   "storeType": 99,
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFklEQVR4nGP8nK/4n4GBgYEJRBBgAABruAKMk82AMQAAAABJRU5ErkJggg==",
+   "bg": "rgb(243,111,33)",
+   "glow": [
+    243,
+    114,
+    37
+   ]
+  },
+  {
+   "appId": "230",
+   "name": "MUBI",
+   "icon": "https://img.vidaahub.com/vidaa/2022/4/202204300235256422.png",
+   "url": "https://tv-production.mubi.com/vidaa/4.0.0/",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFUlEQVR4nGNkEOn8z8DAwMAEIggwAEO7AaZRA2c9AAAAAElFTkSuQmCC",
+   "bg": "rgb(0,20,137)",
+   "glow": [
+    3,
+    23,
+    138
+   ]
+  },
+  {
+   "appId": "355",
+   "name": "UFC",
+   "icon": "https://img.vidaahub.com/vidaa/2023/11/202311090930102217.png",
+   "url": "https://dice-tv.imggaming.com/vidaa/dce.ufc/index.html",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFklEQVR4nGO8zM39n4GBgYEJRBBgAABR0AHy0qnXGwAAAABJRU5ErkJggg==",
+   "bg": "rgb(211,11,11)",
+   "glow": [
+    211,
+    14,
+    14
+   ]
+  },
+  {
+   "appId": "36",
+   "name": "ToonGoggles",
+   "icon": "https://img.vidaahub.com/vidaa/2023/11/202311060906446498.png",
+   "url": "https://html5.toongoggles.com/",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAM0lEQVR4nBXBARGAIBQFwXt/KGQOktiFHMYwgEMlOMbd9PGJUlYgoe1VqGQ+twjt2i+/A5Y/EG96MD7MAAAAAElFTkSuQmCC",
+   "bg": "rgb(135,150,151)",
+   "glow": [
+    153,
+    165,
+    143
+   ]
+  },
+  {
+   "appId": "307",
+   "name": "iQIYI",
+   "icon": "https://img.vidaahub.com/vidaa/2022/5/202205301118186400.png",
+   "url": "https://tv.iq.com",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFklEQVR4nGNkuBP1k4GBgYEJRBBgAABcpwI53oWRDQAAAABJRU5ErkJggg==",
+   "bg": "rgb(0,219,90)",
+   "glow": [
+    4,
+    220,
+    92
+   ]
+  },
+  {
+   "appId": "2368",
+   "name": "Vidaa Smart Life",
+   "icon": "https://img.vidaahub.com/vidaa/2024/12/202412250606164605.jpg",
+   "native": true,
+   "nurl": "AIOT",
+   "storeType": 99,
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFUlEQVR4nGPkF5L8z8DAwMAEIggwADOZAUPa0UG2AAAAAElFTkSuQmCC",
+   "bg": "rgb(15,18,24)",
+   "glow": [
+    17,
+    57,
+    77
+   ]
+  },
+  {
+   "appId": "324",
+   "name": "Sony LIV",
+   "icon": "https://img.vidaahub.com/vidaa/2021/12/202112240722075494.png",
+   "url": "https://vidaatv.sonyliv.com/vidaa-smarttv/vidaa.html",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAOElEQVR4nAEtANL/ATdvs74T0L4MAtM0Pjj86fMyAgH+Bv0S6Or+AEpM1fbAYyb8AgPMys0W/+XT4sEXENtXdikAAAAASUVORK5CYII=",
+   "bg": "rgb(56,50,81)",
+   "glow": [
+    117,
+    65,
+    101
+   ]
+  },
+  {
+   "appId": "166",
+   "name": "E-Manual",
+   "icon": "https://img.vidaahub.com/vidaa/2023/11/202311210706069065.png",
+   "native": true,
+   "nurl": "file:///APPS/emanual/Local_ebook/index.html",
+   "storeType": 99,
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAKklEQVR4nGMUk1T4LyQszMDEzMzCAAJM7BwcEAYHJxeEwcLCyvD3718GAE4lBNDU7cx2AAAAAElFTkSuQmCC",
+   "bg": "rgb(36,40,48)",
+   "glow": [
+    36,
+    40,
     47
    ]
   },
