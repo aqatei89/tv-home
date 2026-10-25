@@ -1,0 +1,238 @@
+{
+ "apps": [
+  {
+   "appId": "284",
+   "name": "TV Channels",
+   "icon": "https://img.vidaahub.com/vidaa/2025/9/202509170704586973.jpg?resize=w_300,h_300",
+   "native": true,
+   "nurl": "vidaa-plus",
+   "storeType": 99,
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFUlEQVR4nGPkF5L+z8DAwMAEIggwADPtAUXIzJWeAAAAAElFTkSuQmCC",
+   "bg": "rgb(15,18,27)",
+   "glow": [
+    40,
+    30,
+    71
+   ]
+  },
+  {
+   "appId": "1604",
+   "name": "SS IPTV",
+   "icon": "https://img.vidaahub.com/vidaa/2022/7/202207051020045390.png?resize=w_300,h_300",
+   "native": true,
+   "nurl": "HTTP_APP_DEFAULT_URL1604",
+   "storeType": 99,
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFUlEQVR4nGMUExf/z8DAwMAEIggwADVQAU2lrpE/AAAAAElFTkSuQmCC",
+   "bg": "rgb(22,23,23)",
+   "glow": [
+    150,
+    150,
+    160
+   ]
+  },
+  {
+   "appId": "1",
+   "name": "Netflix",
+   "icon": "https://img.vidaahub.com/vidaa/2023/11/202311090857551807.png",
+   "native": true,
+   "nurl": "netflix",
+   "storeType": 98,
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFklEQVR4nGP8////fwYGBgYmEEGAAQCqZAQGhTii+wAAAABJRU5ErkJggg==",
+   "bg": "rgb(255,255,255)",
+   "glow": [
+    237,
+    95,
+    99
+   ]
+  },
+  {
+   "appId": "2",
+   "name": "Prime Video",
+   "icon": "https://img.vidaahub.com/vidaa/2024/11/202411210932408667.png",
+   "native": true,
+   "nurl": "amazon",
+   "storeType": 98,
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFklEQVR4nGMUqPv/n4GBgYEJRBBgAABrpQKWPsYGnAAAAABJRU5ErkJggg==",
+   "bg": "rgb(7,121,255)",
+   "glow": [
+    14,
+    124,
+    255
+   ]
+  },
+  {
+   "appId": "351",
+   "name": "Apple TV",
+   "icon": "https://img.vidaahub.com/vidaa/2025/11/202511050649298835.png",
+   "url": "https://atve.tv.apple.com/94819831-5404-4438-810e-afb648d6a826/tvw_1dc2aab0a313427dbc11818be8a18bd9/",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAH0lEQVR4nGPU09P7z8DAwMDy69cvBkZGRggDLoIiBQAydQ1ZWN4KuQAAAABJRU5ErkJggg==",
+   "bg": "rgb(34,34,34)",
+   "glow": [
+    153,
+    162,
+    169
+   ]
+  },
+  {
+   "appId": "3",
+   "name": "YouTube",
+   "icon": "https://img.vidaahub.com/vidaa/2023/11/202311090858299321.png",
+   "url": "https://www.youtube.com/tv",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFklEQVR4nGP8////fwYGBgYmEEGAAQCqZAQGhTii+wAAAABJRU5ErkJggg==",
+   "bg": "rgb(255,255,255)",
+   "glow": [
+    255,
+    38,
+    38
+   ]
+  },
+  {
+   "appId": "24",
+   "name": "MBC Shahid",
+   "icon": "https://img.vidaahub.com/vidaa/2026/1/202601021646538645.png",
+   "url": "https://tvweb.shahid.net/hisense/prod/index.html",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAALklEQVR4nGNkvBj/n+GrMwMTw39eBobvIlDGV1EGJoZ/vAwM30CM/zwMDN9EGAAmEAvK98WZkQAAAABJRU5ErkJggg==",
+   "bg": "rgb(1,193,161)",
+   "glow": [
+    6,
+    196,
+    161
+   ]
+  },
+  {
+   "appId": "1823",
+   "name": "TOD",
+   "icon": "https://img.vidaahub.com/vidaa/2023/2/202302231006146142.png",
+   "url": "https://me-vidda.bein-massive.com/",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFUlEQVR4nGNkYGD4z8DAwMAEIggwACnlAQlKnYWjAAAAAElFTkSuQmCC",
+   "bg": "rgb(0,0,0)",
+   "glow": [
+    190,
+    140,
+    0
+   ]
+  },
+  {
+   "appId": "252",
+   "name": "OSN+",
+   "icon": "https://img.vidaahub.com/vidaa/2024/5/202405060216294237.png",
+   "url": "https://hisense.osnplus.com",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFUlEQVR4nGNkYGD4z8DAwMAEIggwACnlAQlKnYWjAAAAAElFTkSuQmCC",
+   "bg": "rgb(0,0,0)",
+   "glow": [
+    113,
+    2,
+    95
+   ]
+  },
+  {
+   "appId": "330",
+   "name": "STARZPLAY",
+   "icon": "https://img.vidaahub.com/vidaa/2026/3/202603190120068638.png",
+   "url": "https://hisense.starzplay.com/",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAANElEQVR4nGPQdnL6z8DA8J/py9t3DKwcHAyMQtLSIBEGps9v3zDwiIgwMP3+8ZOBV0iIAQAv5wz9VDwIfQAAAABJRU5ErkJggg==",
+   "bg": "rgb(18,28,28)",
+   "glow": [
+    80,
+    123,
+    123
+   ]
+  },
+  {
+   "appId": "2738",
+   "name": "Disney+ Hotstar",
+   "icon": "https://img.vidaahub.com/vidaa/2026/8/202608300325165189.png",
+   "url": "https://livingroom.apps.disneyplus.com/?platform=vidaa",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAMklEQVR4nAXByxEAEAxAwRfJjaEAziow+m/LiM+u0MdjXwIpgipGybAcozaCH0znxMT50sIJM32iNjMAAAAASUVORK5CYII=",
+   "bg": "rgb(1,66,80)",
+   "glow": [
+    4,
+    80,
+    94
+   ]
+  },
+  {
+   "appId": "2256",
+   "name": "Spotify",
+   "icon": "https://img.vidaahub.com/vidaa/2026/5/202605290216573337.jpg",
+   "url": "https://api-partner.spotify.com/tvapp?platform=vidaa",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAFklEQVR4nGOUu57wn4GBgYEJRBBgAABi6gJe+iJM+wAAAABJRU5ErkJggg==",
+   "bg": "rgb(30,215,96)",
+   "glow": [
+    30,
+    211,
+    94
+   ]
+  },
+  {
+   "appId": "16",
+   "name": "TV Browser",
+   "icon": "https://img.vidaahub.com/vidaa/2023/11/202311210704287492.png",
+   "native": true,
+   "nurl": "browser",
+   "storeType": 100,
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAKklEQVR4nGMUk1T4LyQszMDEzMzCAAJM7BwcEAYHJxeEwcLCyvD3718GAE4lBNDU7cx2AAAAAElFTkSuQmCC",
+   "bg": "rgb(36,40,48)",
+   "glow": [
+    35,
+    39,
+    47
+   ]
+  },
+  {
+   "appId": "1488",
+   "name": "VivaLIVE TV",
+   "icon": "https://img.vidaahub.com/vidaa/2022/5/202205230705456712.png?resize=w_300,h_300",
+   "url": "https://www.vivalivetv.com/tv-v2",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAKElEQVR4nGP4/5+BkYGBgYHpcZEFx38GCIdhvr09BwOMxwQWYmBgAADWEQa+1V8hWwAAAABJRU5ErkJggg==",
+   "glow": [
+    239,
+    120,
+    47
+   ]
+  },
+  {
+   "appId": "2544",
+   "name": "thmanyah",
+   "icon": "https://img.vidaahub.com/vidaa/2025/11/202511050241556507.jpg",
+   "url": "https://vidaa.tv.thmanyah.com",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAAKUlEQVR4nGOUlpb+z8DAwMDy588fEM3A8vv3bwjj169fYAYjCwsLWA0AGkgLPYiFEL8AAAAASUVORK5CYII=",
+   "bg": "rgb(17,17,17)",
+   "glow": [
+    150,
+    150,
+    160
+   ]
+  },
+  {
+   "appId": "2346",
+   "name": "IPTV Smarters",
+   "icon": "https://img.vidaahub.com/s3_bucket/9999/app/9999_1ed34aca-e64b-4aba-ac49-e712b6f49a65/831b17931cc5ef598b86d4c3363289ea?f=webp&resize=w_300,h_300",
+   "url": "https://d19bx00uctsrxi.cloudfront.net/",
+   "backdrop": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAFCAYAAABvsz2cAAAANklEQVR4nGN0dGvXZ2D4zcDCxsy7mYnpPwMLIwMzOxPjPwaW/////fn3/z8Dy+9fnwMZWBgYAB7FD1NxiY6fAAAAAElFTkSuQmCC",
+   "bg": "rgb(82,83,161)",
+   "glow": [
+    89,
+    89,
+    166
+   ]
+  }
+ ],
+ "dock": [
+  "24",
+  "3",
+  "1",
+  "252"
+ ],
+ "helper_dock": [
+  "24",
+  "3",
+  "1",
+  "252"
+ ],
+ "sources": [],
+ "browser": {},
+ "greeting_name": "Ahmad",
+ "clock_24h": false,
+ "native_ok": null
+}
